@@ -1,0 +1,109 @@
+:root {
+    --Grey-900: #141414;  
+    --Grey-800: #1F1F1F;  
+    --Grey-700: #333333;  
+    --Green: #c4f82a;  
+    --White: #ffffff;
+    
+    /* Dynamic Font Sizes - Adjusts Without Media Queries */
+    --font-24: clamp(18px, 5vw, 24px);
+    --font-20: clamp(16px, 4.5vw, 20px);
+    --font-16: clamp(14px, 4vw, 16px);
+    --font-14: clamp(12px, 3.5vw, 14px);
+}
+
+@font-face {
+    font-family: 'InterVariable';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body {
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+.card {
+    background-color: var(--Grey-800);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.card h2 {
+    color: var(--White);
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: var(--font-24);
+}
+.card p {
+    color: var(--White);
+    margin: 25px 0;
+    font-family: 'InterVariable', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+}
+.card .location {
+    color: var(--Green);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0;    
+}
+
+
+.btn {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    padding: 10px;
+    margin: 15px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    /*transition: 1s ease-in-out;*/
+}
+.btn:hover {
+    background-color: var(--Green);
+    color: var(--Grey-800);
+    transition: 1s ease-in, 0.1s ease-out;
+}
