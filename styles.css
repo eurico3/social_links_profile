@@ -53,14 +53,15 @@ body {
 .card {
     background-color: var(--Grey-800);
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    width: 320px;
+    width: 384px;
+    height: 611px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .card img {
-    width: 80px;
-    height: 80px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
@@ -85,21 +86,29 @@ body {
     font-size: 14px;
     margin: 5px 0;    
 }
-
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 16px; /* Space between buttons */
+}
 
 .btn {
-    display: block;
+    
     font-family: 'Inter', sans-serif;
+    width: 304px;
+    height: 45px;
     font-weight: 600;
     font-size: 13px;
     background-color: var(--Grey-700);
     color: var(--White);
-    padding: 10px;
-    margin: 15px 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 5px;
+    text-align: center; /* Center text inside button */
+    display: flex;
+    justify-content: center; /* Centers text inside the button */
+    align-items: center; /* Centers text vertically */
     text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 10px; /* Rounded corners */
     /*transition: 1s ease-in-out;*/
 }
 .btn:hover {
